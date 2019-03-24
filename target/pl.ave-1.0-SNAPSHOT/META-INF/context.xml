@@ -11,4 +11,12 @@
               driverClassName="com.mysql.jdbc.Driver"
               password="admin"
               url="jdbc:mysql://localhost:3306/mypocket_database?useSSL=false&amp;serverTimezone=UTC" />
+    <Realm className="org.apache.catalina.realm.DataSourceRealm"
+           dataSourceName="jdbc/mypocket_database"
+           userTable="user"
+           userNameCol="username"
+           userCredCol="password"
+           userRoleTable="user_role"
+           roleNameCol="role_name"
+           localDataSource="true" />
 </Context>

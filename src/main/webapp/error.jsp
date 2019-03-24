@@ -12,6 +12,6 @@
 </head>
 <body>
 <h1>Coś poszło nie tak</h1>
-<a href="index.jsp">Spróbuj ponownie</a>
+    <a href="index.jsp">Spróbuj ponownie</a>
 </body>
 </html>

@@ -35,14 +35,19 @@
   </properties>
 
   <dependencies>
-  <!-- These dependencies are required to run the project on the server -->
-  <!-- Java EE 7.0 Web profile dependency -->
-  <dependency>
-    <groupId>javax</groupId>
-    <artifactId>javaee-web-api</artifactId>
-    <version>7.0</version>
-    <scope>provided</scope>
-  </dependency>
-  </dependencies>
+    <!-- These dependencies are required to run the project on the server -->
+    <!-- Java EE 7.0 Web profile dependency -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>4.0.0.RELEASE</version>
+    </dependency>
 
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-web-api</artifactId>
+      <version>7.0</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
 </project>

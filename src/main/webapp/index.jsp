@@ -59,8 +59,10 @@
     <input placeholder="Nazwa użytkownika" type="text" name="userForDelete">
     <br />
     <button type="submit" name="delete" value="delete">Usuń!</button>
-
 </form>
+
+    <br /><br />
+    <a href="admin.jsp">Zaloguj sie do panelu administratora</a>
 
 
 
