@@ -10,11 +10,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="${pageContext.request.contextPath}/resources/css/styles.css" type="text/css" rel="stylesheet">
     <title>Title</title>
 </head>
 <body>
+<jsp:include page="/WEB-INF/fragments/header.jspf"/>
     <h2>Wykonano operacje: <%= request.getAttribute("operation") %> </h2>
-
+<jsp:include page="/WEB-INF/fragments/footer.jspf"/>
 
 </body>
 </html>

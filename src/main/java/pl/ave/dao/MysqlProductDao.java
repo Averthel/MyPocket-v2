@@ -18,7 +18,7 @@ public class MysqlProductDao implements ProductDao {
     private final static String CREATE =
             "INSERT INTO product(name, description, category, count, price) VALUES(:name, :description, :category, :count, :price);";
     private final static String READ =
-            "SELECT description, category, price, count, name FROM product WHERE name=:name;";
+            "SELECT description, category, price, count, name FROM product WHERE category=:category;";
     private final static String UPDATE =
             "UPDATE product SET description=:description, category=:category, count =:count, price=:price, name=:name WHERE name=:name;";
     private final static String DELETE =
@@ -39,9 +39,9 @@ public class MysqlProductDao implements ProductDao {
     }
 
 
-    public Product read(String name) {
+    public Product read(String category) {
         Product resultProduct = null;
-        SqlParameterSource namedParameters = new MapSqlParameterSource("name", name);
+        SqlParameterSource namedParameters = new MapSqlParameterSource("category", category);
         List<Product> productList = template.query(READ, namedParameters, BeanPropertyRowMapper.newInstance(Product.class));
         if(productList.get(0) != null){
             resultProduct = productList.get(0);

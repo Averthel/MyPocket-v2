@@ -1,0 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+
+<footer class="footer">
+    <div class="containerF">
+        <p>
+            MyPocket - developed by <a id="fotA" href="#">Programista bez uprawnień</a>
+        </p>
+    </div>
+</footer>

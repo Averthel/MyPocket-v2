@@ -13,8 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
-
 @WebServlet("/ProductServlet")
 public class ProductServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -38,7 +36,7 @@ public class ProductServlet extends HttpServlet {
             Product product = null;
             String operation = null;
             if ("search".equals(option)) {
-                product = dao.read(name);
+                product = dao.read(category);
                 operation = "search";
             } else if ("add".equals(option)) {
                 product = new Product(name, description, category, price, count);
@@ -66,4 +64,5 @@ public class ProductServlet extends HttpServlet {
             throws ServletException, IOException {
 
     }
+
 }
